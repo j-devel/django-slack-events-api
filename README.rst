@@ -118,7 +118,10 @@ see `Appendix: Setup your bot in Slack`_.
 **(3) Modify bot/urls.py to configure the endpoint.**
 
 .. code::
-   
+
+   from django.conf.urls import include, url
+   from django.contrib import admin
+
    urlpatterns = [
        url(r'^admin/', include(admin.site.urls)),
        url(r'^slack/', include('slack.urls', namespace="slack")),  # <-- add this
