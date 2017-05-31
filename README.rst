@@ -14,7 +14,7 @@ This is intended to minimal (devoid of extra model, template, and
 module-dependency stuffs) focusing only on `Slack Events`_ handling.  However,
 all the features and examples useful for Slack bot creation (such as utilizing
 the `python-slackclient`_) found in the original Flask version are retained and
-functional.  After working through `the demo section`_, you'll find it easy to
+functional.  After working through the demo section, you'll find it easy to
 integrate this app into your Django projects as well.
 
 .. _Slack Events: https://api.slack.com/events-api
@@ -49,8 +49,6 @@ Installation
    $ git clone https://github.com/mm-jay/django-slack-events-api.git
    $ cd django-slack-events-api
    $ pip install -r requirements.txt
-
-.. _the demo section:
 
 Demo: creating a minimal Django project for a Slack bot
 -----------------------------------------------------------
