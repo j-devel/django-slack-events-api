@@ -1,19 +1,21 @@
 Slack Events API adapter as a Django app
 ========================================
 
-**django-slack-events-api** is a Django-app porting of the official Slack Events
-API adapter: `python-slack-events-api`_.  The original adapter is based on the
-`Flask framework`_; so here's a modular Django app version instead ;-)
+**django-slack-events-api** is a minimal Django app for making your Slack bot.
+
+It includes a Django porting of the official Slack Events API adapter:
+`python-slack-events-api`_.  The original adapter is based on the `Flask
+framework`_; so here's a modular Django app version instead ;-)
 
 .. _python-slack-events-api: https://github.com/slackapi/python-slack-events-api
 .. _Flask framework: https://github.com/pallets/flask
 
-This is intended to be a minimal Django app (devoid of extra model, template,
-and module-dependency stuffs) focusing only on `Slack Events`_ handling.
-However, all the features and examples useful for Slack bot creation (such as
-utilizing the `python-slackclient`_) found in the original Flask version are
-retained and functional.  After working through `the demo section`_, you'll
-find it easy to integrate this app into your Django projects as well.
+This is intended to minimal (devoid of extra model, template, and
+module-dependency stuffs) focusing only on `Slack Events`_ handling.  However,
+all the features and examples useful for Slack bot creation (such as utilizing
+the `python-slackclient`_) found in the original Flask version are retained and
+functional.  After working through `the demo section`_, you'll find it easy to
+integrate this app into your Django projects as well.
 
 .. _Slack Events: https://api.slack.com/events-api
 .. _python-slackclient: https://github.com/slackapi/python-slackclient
