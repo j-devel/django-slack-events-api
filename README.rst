@@ -10,7 +10,7 @@ framework`_; so here's a modular Django app version instead ;-)
 .. _python-slack-events-api: https://github.com/slackapi/python-slack-events-api
 .. _Flask framework: https://github.com/pallets/flask
 
-This is intended to minimal (devoid of extra model, template, and
+This is intended to be minimal (devoid of extra model, template, and
 module-dependency stuffs) focusing only on `Slack Events`_ handling.  However,
 all the features and examples useful for Slack bot creation (such as utilizing
 the `python-slackclient`_) found in the original Flask version are retained and
