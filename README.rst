@@ -32,7 +32,7 @@ library integration:
 .. _a minimal client: slack/client_urllib2.py
 .. _urllib2: https://docs.python.org/2/howto/urllib2.html
 
-**Credits:** Sections marked by 🤖 is a derived work of `python-slack-events-api/example/README.rst`_.
+**Credits:** Sections marked by 🤖 are a derived work of `python-slack-events-api/example/README.rst`_.
 
 Installation
 -----------------
