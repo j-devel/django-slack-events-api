@@ -40,15 +40,16 @@ Installation
 **Tested environment:**
 
 - Python 2.7
-- Django 1.8.9
+- Django 1.11.18
 
 **Install the app and its dependencies:**
 
 .. code::
 
-   $ git clone https://github.com/mm-jay/django-slack-events-api.git
+   $ git clone https://github.com/j-devel/django-slack-events-api.git
    $ cd django-slack-events-api
-   $ pip install -r requirements.txt
+   $ pipenv install
+   $ pipenv shell
 
 Demo: creating a minimal Django project for a Slack bot
 -----------------------------------------------------------
@@ -117,13 +118,14 @@ see `Appendix: Setup your bot in Slack`_.
 
 .. code::
 
-   from django.conf.urls import include, url
-   from django.contrib import admin
+    from django.conf.urls import url, include  # <-- add this
+    from django.contrib import admin
+    from slack import urls as slack_urls  # <-- add this
 
-   urlpatterns = [
-       url(r'^admin/', include(admin.site.urls)),
-       url(r'^slack/', include('slack.urls', namespace="slack")),  # <-- add this
-   ]
+    urlpatterns = [
+        url(r'^admin/', admin.site.urls),
+        url(r'^slack/', include(slack_urls, namespace="slack")),  # <-- add this
+    ]
 
 **(4) [Optional] Modify slack/urls.py to customize the endpoint (default is /slack/events)**
 
@@ -204,7 +206,7 @@ Subscription setup
 
 **(8) Interact with your bot**
 
-Invite your bot to a public channel, then say hi and your bot will respond.
+Invite your bot to a public channel (e.g. # general), then say hi and your bot will respond.
 
 .. image:: https://cloud.githubusercontent.com/assets/29015408/26621593/813a695e-4611-11e7-856d-3c48a31cd906.png
 
@@ -249,7 +251,7 @@ Authorize your app
 
 **🤖  Subscribe your app to events**
 
-Add your **Request URL** (your ngrok URL + ``/slack/events``) and subscribe your app to `message.channels` under bot events. **Save** and toggle **Enable Events** to `on`
+Add your **Request URL** (your ngrok URL + ``/slack/events``) and subscribe your app to ``message.channels`` under bot events. **Save** and toggle **Enable Events** to `on`
 
 .. image:: https://cloud.githubusercontent.com/assets/32463/24877867/b39d4384-1de5-11e7-9676-9e47ea7db4e7.png
 
