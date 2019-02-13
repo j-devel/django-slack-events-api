@@ -37,10 +37,10 @@ library integration:
 Installation
 -----------------
 
-**Tested environment:**
+**Environment:**
 
 - Python 2.7
-- Django 1.11.18
+- Django 1.11.x
 
 **Install the app and its dependencies:**
 
