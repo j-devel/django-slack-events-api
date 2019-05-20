@@ -9,6 +9,7 @@ six = "~=1.9"
 pyee = "~=3.0"
 slackclient = "~=1.0"
 slacker = "~=0.9"
+urllib3 = ">=1.24.2"
 
 [dev-packages]
 
