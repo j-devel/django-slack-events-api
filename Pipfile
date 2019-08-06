@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = ">=1.11.22"
+django = ">=1.11.23"
 six = "~=1.9"
 pyee = "~=3.0"
 slackclient = "~=1.0"
